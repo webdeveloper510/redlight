@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta >
+<style>
+
+  input::-webkit-input-placeholder { font-size: 12pt; color: #555; }
+
+  input.other1::-webkit-input-placeholder { font-size: 12pt; color:blue; }
+
+  input.other2::-webkit-input-placeholder { font-size: 12pt; color:green; }
+  
+  input.other3::-webkit-input-placeholder { font-size: 12pt; color:yellow; }
+ 
+  input.other4::-webkit-input-placeholder { font-size: 12pt; color:brown; }
+ 
+  input.other5::-webkit-input-placeholder { font-size: 12pt; color:aqua; }
+
+ 
+.over1{
+  background-color: coral;
+  width: 200px;
+  height: 65px;
+  border: 1px solid;
+  overflow: visible;
+ 
+}
+
+.over2{
+  background-color: coral;
+  width: 200px;
+  height: 65px;
+  border: 1px solid black;
+  overflow: hidden;
+  margin: 5px;
+ 
+}
+
+
+.over3{
+  background-color: coral;
+  width: 200px;
+  height: 65px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+  .over4{
+  background-color: coral;
+  width: 200px;
+  height: 95px;
+  border: 1px solid black;
+  overflow: scroll;
+  
+}
+
+.reading {
+  opacity: 0.5;
+}
+
+.reading1 {
+display: none;
+}
+
+
+.content {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+content::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* other styling */
+
+content{
+  background-color: #EAF0F6;
+  color: #2D3E50;
+  font-family: 'Avenir';
+  font-size: 26px;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+  <input type="text" placeholder="Hello"></input>
+  <input type="text" class="other1" placeholder="Hello how are you"></input>
+  <input type="text" class="other2" placeholder="Hello"></input>
+  <input type="text" class="other3" placeholder="Hello"></input>
+  <input type="text" class="other4" placeholder="Hello"></input>
+  <input type="text" class="other5" placeholder="Hello"></input><br/>
+  <br/>
+
+  overflow: visible
+  <div class="over1">
+    You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. 
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  overflow: hidden
+  <div class="over2">
+    You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+  </div>
+<br/>
+  overflow: auto
+  <div class="over3">
+    You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+  </div>
+  <br/>
+  overflow: scroll
+  <div class='over4'>
+    You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+  </div>
+<br/>
+  <img class="reading" src="https://images.unsplash.com/photo-1571193161738-deaba9b6cc26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cmVhZGluZyUyMGJvb2t8ZW58MHx8MHx8&w=1000&q=80" alt="Forest" width="170" height="100">
+  <img class="reading1" src="https://images.unsplash.com/photo-1571193161738-deaba9b6cc26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cmVhZGluZyUyMGJvb2t8ZW58MHx8MHx8&w=1000&q=80" alt="Forest" width="170" height="100">
+ 
+  <div class="content">
+    <p>scroll down!</p>
+    <p>content</p>
+    <p>content</p>
+    <p>content</p>
+    <p>content</p>
+    <p>content</p>
+    <p>content</p>
+    <p>scroll up!</p>
+  </div>
+</body>
+</html>

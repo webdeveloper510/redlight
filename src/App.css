@@ -1,0 +1,552 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.skill{
+  text-align: left;
+  padding-top: 10px;
+}
+
+.book{
+  padding-top: 10px;
+}
+
+.about{
+  margin-top: 90px;
+  text-align: left;
+}
+
+.journey{
+  text-align: left;
+  background: linear-gradient(to right, #9bc8f2, #e575a9);
+  border-radius: 50px;
+  padding: 20px 0px 0px 20px;
+  height: 370px;
+  margin-top: 40px;
+}
+
+.value{
+  padding-top: 30px;
+}
+
+.classes{
+  padding-top: 2px;
+}
+
+.school{
+  color:darksalmon;
+  background-color: white;
+  border-radius: 6px;
+  display: inline;
+  padding: 10px 4px 0px 2px;
+}
+
+.group{
+  color:darksalmon;
+  background-color: white;
+  border-radius: 6px;
+  display: inline;
+  padding: 10px 4px 0px 2px;
+
+}
+
+.note{
+  color:darksalmon;
+  background-color: white;
+  border-radius: 6px;
+  display: inline;
+  padding: 10px 4px 0px 2px;
+}
+
+
+.sat{
+  color:darksalmon;
+  background-color: white;
+  border-radius: 6px;
+  display: inline;
+  padding: 10px 4px 0px 2px;
+}
+
+.registration{
+  padding: 0px 0px 0px;
+}
+
+.topic{
+  padding-top: 10px;
+}
+
+.help{
+  text-align: left;
+}
+
+.industry{
+  padding:10px 0px 0px 10px;
+
+}
+
+.learn{
+  padding-top: 60px;
+}
+
+.experts{
+  display: flex;
+  padding-top: 10px;
+}
+
+.number{
+  padding-top: 10px;
+}
+
+.go{
+  text-align: left;
+  padding-top: 10px;
+}
+
+.peace{
+  display: flex;
+}
+
+.own{
+  padding:90px 0px 0px 10px;
+  
+}
+
+.number1{
+  padding-top: 90px;
+}
+
+.course{
+  display: flex;
+}
+
+.video{
+  padding:10px 0px 0px 10px;
+}
+
+.number2{
+  padding-top: 10px;
+}
+
+.student{
+  background-color:lightblue;
+  height: 350px;
+  border-radius: 50px;
+  margin-top: 60px;
+}
+
+.finally{
+  text-align:left;
+  padding: 40px 0px 0px 0px;
+}
+
+.platform{
+  padding-top: 10px;
+}
+
+.kianna{
+  padding-top: 10px;
+}
+
+.book1{
+padding: 20px ;
+}
+
+.learning{
+  justify-content: center;
+  margin-top: 20px;
+  background-image: radial-gradient(#d3101040, white, white);
+}
+
+.tempor{
+  padding-top: 10px;
+}
+
+.now{
+  padding-top: 10px;
+}
+
+.footer{
+  padding-top: 10px;
+}
+
+
+.word::-webkit-scrollbar {
+  display: none;
+  
+}
+
+
+.word{
+  overflow-y: scroll; 
+  -ms-overflow-style: none;
+}
+
+.word{
+  border: 4px solid black;
+  border-radius: 10px;
+  height: 1000px;
+  padding: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Terms and Conditions in policy */
+
+
+.ter{
+padding: 5px;
+}
+
+
+.bill p a{
+  text-decoration: none;
+}
+
+.sub p a{
+  text-decoration: none;
+}
+
+.ref p a{
+  text-decoration: none;
+}
+
+.can p a{
+  text-decoration: none;
+}
+
+.car p a{
+  text-decoration: none;
+}
+
+.col p a{
+  text-decoration: none;
+}
+
+.cop p a{
+  text-decoration: none;
+}
+
+.oth p a{
+  text-decoration: none;
+}
+
+
+.foot ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.all{
+  background-color: whitesmoke;
+  text-align: end;
+}
+
+
+.button{
+ text-align: center;
+}
+
+
+.body{
+  background-color:white;
+}
+
+.img{
+  background-image: url('https://thumbs.dreamstime.com/b/beautiful-confident-business-woman-sexy-black-stylish-suit-posing-red-beautiful-confident-business-woman-sexy-black-160358529.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 250px;
+  margin-top: 20px;
+}
+
+.side{
+  margin-top: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+.term{
+  text-align: left;
+}
+
+.aprov{
+  padding-left: 50px;
+}
+
+.agnt{
+  padding:10px 0px 0px 40px;
+}
+
+.link{
+  padding-left: 20px;
+}
+
+.you{
+  padding-left: 25px;
+}
+
+.foot{
+  background-color:#53555a;
+  color:white;
+  width: 100%;
+  height: 180px;
+  padding: 30px;
+}
+
+.foot ul li {
+  display: inline;
+  padding: 14px;
+}
+
+.link ol li a{
+  text-decoration: none;
+}
+
+.foot ul {
+    text-align: center;
+}
+
+.twit{
+  background-color:#4c4747;
+  color: white;
+  height:50px;
+  padding-top: 10px;
+}
+
+.need{
+  text-align: center;
+  padding-top: 75px;
+  color: white;
+}
+
+.register{
+  padding: 9px;
+  color:darksalmon;
+  padding-top: 30px;
+}
+
+.total{
+  border: 1px solid black;
+  margin: 11px;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
+
+
+/* Cookies Policy in privacy */
+.colorwhite {
+  color:white;
+   padding-top:20px;
+}
+.redcolor {
+  color: red;
+}
+.acknowledge {
+  padding: 30px;
+  overflow-y: scroll;
+  text-align: left;
+  max-height: 400px;
+}
+
+.land {
+  background-color: #293a4b;
+}
+
+.Setting {
+  background: white;
+  border-radius: 7px;
+}
+
+.text-center.content {
+  background: #e9ecef;
+  padding: 30px;
+}
+
+.privacy{
+  background-color: whitesmoke;
+}
+
+
+.ram{
+  background-color: white;
+}
+
+
+.side1{
+  margin-top: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+.emg{
+  background-image: url('https://thumbs.dreamstime.com/b/beautiful-confident-business-woman-sexy-black-stylish-suit-posing-red-beautiful-confident-business-woman-sexy-black-160358529.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 15rem;
+  width: 145px;
+  padding-top: 20px;
+}
+
+.mid{
+  padding-top: 80px;
+  color: white;
+  text-align: center;
+}
+
+.register1 {
+  padding-top: 30px;
+  text-align: center;
+ 
+}
+
+.total1 {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  width: 145px;
+  margin-left: 10px;
+}
+
+.butt{
+  padding-bottom: 10px;
+
+}
+
+
+.cookie{
+  text-align: left;
+  padding:10px 0px 0px 30px;
+}
+
+.sub.p.a{
+  text-decoration: none;
+}
+
+.about  li {
+  margin-left:  30px;
+}
+
+.dat{
+  padding: 5px;
+}
+
+.foot1{
+  background-color:#53555a;
+  color:white;
+  width: 100%;
+  height: 180px;
+  padding: 30px;
+}
+
+.foot1 ul li {
+  display: inline;
+  padding: 14px;
+}
+
+.foot1 ul {
+    text-align: center;
+}
+
+.head ul li a {
+  text-decoration: none;
+  color:white;
+}
+
+.twit1{
+  background-color:#4c4747;
+  color: white;
+  height:50px;
+  padding-top: 10px;
+}
+
+
+/* login Css */
+
+
+.login{
+  background-color: whitesmoke;
+}
+
+.member{
+  background-color: white; 
+  padding: 40px;
+}
+
+.account{
+  background-image: url('https://images.unsplash.com/photo-1564679095567-2695f154a9c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c3RhcmZpc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align: left;
+  color: white;
+  height: 500px;
+  width: 240px;
+  padding:70px 0px 0px 10px;
+}
+
+.alredy{
+  padding: 20px;
+  width: 496px;
+}
+.main-login{
+  display: flex;
+}
+
+.checkbox{
+  padding: 15px 10px 0px 0px;
+  text-align: left;
+}
+
+.regis{
+ padding-left: 60px;
+}
+
+.mor{
+  color: white;
+}
