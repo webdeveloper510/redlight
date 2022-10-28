@@ -5,7 +5,7 @@ import Header from './header'
 function Privacy() {
   return (
     <>
-    <Header/>
+      <Header />
       <div className='privacy py-4'>
         <Container>
           <div >
@@ -17,12 +17,12 @@ function Privacy() {
                   </div>
                   <div className='sub'>
                     <div className='dat'>
-                    <p>This Cookies Policy (the “Policy") dated 06 November 2019 replaces all previous policies. Please take the time to review before you continue to use our products and services.</p>
-                    <p>This Policy applies to any information you provide to us, including through this website, our mobile apps, communications by email and through social media, by telephone and in person. It also covers any information we receive from third parties.</p>
-                    <p>By using our products and services, including browsing our websites, registering or logging in, you agree we may use your information as outlined in this Policy. If you do not wish to have your information used in line with this Policy, you must not use our products and services and not otherwise provide us with your information.</p>
+                      <p>The standard Lorem Ipsum passage, used since the 1500s</p>
+                      <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                     </div>
                     <ol className='about'>
-                      <li><p ><b>About Us.</b> No Excuses Agents LTD operates the service located on www.theeroticreview.com (the "Site").</p></li>
+                      <li><p ><b>About Us.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p></li>
                       <li><p ><b>Cookies Policy.</b> You should be aware that when you use the Site we may collect information using cookies or similar technologies (Please see our Cookies Policy).</p></li>
                       <li><p><b>What are cookies and how do they work? </b>Cookies are small files that are downloaded to your computer or mobile device when you visit a website. Your browser sends these cookies back to the website every time you visit the site again, so it can recognize you. This allows websites to tailor what you see on the screen.</p>
                         <p>This website uses cookies to improve your experience while you navigate through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyse and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt- out of these cookies. But opting out of some of these cookies may influence your browsing experience.</p>
@@ -40,13 +40,9 @@ function Privacy() {
                         <p>We also use cookies in order to know how many advertisements we serve, how many times these are clicked or hovered over with a mouse cursor, how many advertisements we show to a given user and how many customer actions these generate. We may also use cookies on the Site and advertisers' sites to understand which customers reach a sale or other action page on an advertiser's site. This allows us to monitor how effective our advertising is. Some of our web pages will contain promotional links to other companies' sites. If you follow one of these links and then register with or buy something from that other site, a cookie is sometimes used to tell that other site that you came from one of our sites. That other site may then pay us a small amount for the successful referral. You will need to review the privacy policy of any website whose advertisement you click on as this Policy only applies to pages on our domain.</p>
                       </li>
                       <li><p><b>Contacting us and accessing your personal information.</b> If you have any queries or comments about this Cookies Policy please contact us at:</p>
-                        <p><a href='support@theeroticerview.com'>legal@theeroticreview.com</a></p>
+                        <p><a href='support@redlightrating.com'>legal@redlightrating.com</a></p>
                         <p>else please write to us at:</p>
-                        <p>Attention: Data Protection Officer<br />
-                          No Excuses Agents Ltd<br />
-                          P.O. BOX 62885<br />
-                          Paphos<br />
-                          Cyprus 8062</p>
+
                       </li>
                       <li><p><b>Changes to this Cookies Policy.</b>We reserve the right to make changes to our Cookies Policy. Changes to this policy will be posted here and will become effective as of the updated effective date. Your continued use of our website or platform will signify your acceptance of these change</p></li>
                     </ol>
@@ -86,7 +82,7 @@ function Privacy() {
           </div>
         </Container>
       </div>
-    <Footer />
+      <Footer />
     </>
   )
 }
