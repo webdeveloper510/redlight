@@ -1,12 +1,17 @@
 .App {
-  text-align: center;
+background-color:#d7d7d785;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.Become {
+    background-color: white;
+    padding: 11px;
+    height: 100%;
+    border-radius: 4px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,6 +41,11 @@
     transform: rotate(360deg);
   }
 }
+
+a.nav-link {
+    margin: 0px 18px;
+}
+
 
 .skill{
   text-align: left;
@@ -304,7 +314,7 @@ padding: 5px;
 
 .side{
   margin-top: 0px;
-  padding: 10px;
+
   text-align: center;
 }
 
@@ -353,6 +363,7 @@ padding: 5px;
   background-color:#4c4747;
   color: white;
   height:50px;
+  text-align:center;
   padding-top: 10px;
 }
 

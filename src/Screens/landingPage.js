@@ -12,13 +12,13 @@ function landingPage() {
           
             <Row className="my-4">
                 <Col md={4}>
-                    <div className=''>
+                    <div className='Become'>
                         <h3>Get Started </h3>
                         <p>The Erotic Review is the most comprehensive database featuring providers and escorts from all over the world.</p>
                     </div>
                 </Col>
                 <Col md={4}>
-                  <div className=''>
+                  <div className='Become'>
                     <h4>Become a Member</h4>
                     <p>Signing up is free so join today to take advantage of exclusive benefits such as escort contact information full uncensored reviews.</p>
                     <Row>
@@ -32,7 +32,7 @@ function landingPage() {
                   </div>
                 </Col>
                 <Col md={4}>
-                <div className=''>
+                <div className='Become'>
                     <h4>Are you a Provider?</h4>
                     <p>As a Provider member you get to keep track of your reputation as well as maintain your popularity.</p>
                     <Row>
@@ -49,6 +49,7 @@ function landingPage() {
             </Row>
             <Row className='my-4'>
                 <Col md={6}>
+                <div class="Become">
                     <h4>TER Poll</h4>
                     <h6>For all the reviewers out there, do you REALLy READ the guidelines before agreeing to them?</h6>
                         <Form.Check
@@ -66,18 +67,21 @@ function landingPage() {
                         
                         />
                          <Button variant="secondary">Vote</Button>
+                         </div>
                 </Col>
                 <Col md={6}>
+                <div class="Become">
                     <h4>Tools</h4>
                     <h6>Get email updates</h6>
                     <p>Sign up for free TER email newsletters.</p>
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Control type="email" placeholder="Your email address" />
                     </Form.Group>
+                    </div>
                 </Col>
             </Row>
         </Container>
-        <div className=''>
+        <div className='Become'>
             <Container >         
          <Row>
                 <Col md={10}>
