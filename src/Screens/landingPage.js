@@ -176,7 +176,7 @@ function landingPage() {
                 <li>Can read the Juicy Details sections of provider reviews. The Juicy Details is where our users give complete, blow-by-blow descriptions of their sessions.</li>
                 <li>Have access to our VIP search page. This allows our users to search for providers based on name, phone number, contact information, physical attributes, services offered, and many more criteria.</li>
                 <li>Have full access to all of RL’s chatrooms.</li>
-                <li>Can send and receive Personal Messages (PM’s) to other TER members and providers by using RL Mail.</li>
+                <li>Can send and receive Personal Messages (PM’s) to other RL members and providers by using RL Mail.</li>
             </ul>
         </div>
               </Col>

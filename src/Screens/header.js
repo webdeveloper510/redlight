@@ -13,15 +13,13 @@ function header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">My TER</Nav.Link>
+            <Nav.Link href="/">My RL</Nav.Link>
             <Nav.Link href="#link">Reviews</Nav.Link>
             <Nav.Link href="#link">Messages</Nav.Link>
             <Nav.Link href="#link">Discussion Boards</Nav.Link>
             <Nav.Link href="#link">Site Reviews</Nav.Link>
             <Nav.Link href="#link">Help</Nav.Link>
-            <Nav.Link className='search' href="#link"><span class="material-symbols-outlined">
-search
-</span></Nav.Link>
+            <Nav.Link className='search' href="#link"><span class="material-symbols-outlined">search</span></Nav.Link>
             <Nav.Link href="/login">Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
