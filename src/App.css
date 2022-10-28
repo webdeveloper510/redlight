@@ -523,11 +523,15 @@ padding: 5px;
 
 .login{
   background-color: whitesmoke;
+  padding: 40px;
 }
 
 .member{
   background-color: white; 
-  padding: 40px;
+}
+
+.get{
+  padding-top: 20px;
 }
 
 .account{
@@ -537,11 +541,12 @@ padding: 5px;
   text-align: left;
   color: white;
   height: 500px;
-  width: 240px;
+  width: 220px;
   padding:70px 0px 0px 10px;
 }
 
 .alredy{
+  text-align: center;
   padding: 20px;
   width: 496px;
 }

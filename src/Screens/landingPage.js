@@ -9,18 +9,22 @@ function landingPage() {
     <div>
         <Header />
         <Container>
-          
+          <Row></Row>
             <Row className="my-4">
                 <Col md={4}>
                     <div className='Become'>
                         <h3>Get Started </h3>
-                        <p>The Erotic Review is the most comprehensive database featuring providers and escorts from all over the world.</p>
+                        <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        </p>
                     </div>
                 </Col>
                 <Col md={4}>
                   <div className='Become'>
                     <h4>Become a Member</h4>
-                    <p>Signing up is free so join today to take advantage of exclusive benefits such as escort contact information full uncensored reviews.</p>
+                    <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+                    </p>
                     <Row>
                         <Col>
                          <a href=''>View More Benefits</a>
@@ -34,7 +38,7 @@ function landingPage() {
                 <Col md={4}>
                 <div className='Become'>
                     <h4>Are you a Provider?</h4>
-                    <p>As a Provider member you get to keep track of your reputation as well as maintain your popularity.</p>
+                    <p>As a Provider member you get to keep track of your reputation as well as maintain your popularity.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
                     <Row>
                         <Col>
                          <a href=''>View More Benefits</a>
@@ -51,7 +55,7 @@ function landingPage() {
                 <Col md={6}>
                 <div class="Become">
                     <h4>TER Poll</h4>
-                    <h6>For all the reviewers out there, do you REALLy READ the guidelines before agreeing to them?</h6>
+                    <h6>The standard Lorem Ipsum passage, used since the 1500s.</h6>
                         <Form.Check
                             inline
                             label="Yes"
@@ -73,7 +77,7 @@ function landingPage() {
                 <div class="Become">
                     <h4>Tools</h4>
                     <h6>Get email updates</h6>
-                    <p>Sign up for free TER email newsletters.</p>
+                    <p>Sign up for free.</p>
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Control type="email" placeholder="Your email address" />
                     </Form.Group>
@@ -161,22 +165,22 @@ function landingPage() {
             <h2>TER offers two levels of membership – basic and VIP</h2>
             <h4>Members who sign up for a FREE basic membership:</h4>
             <ul>
-                <li>Have partial access to viewing provider profiles.</li>
-                <li>Can read the General Details text portion of provider reviews.</li>
-                <li>Have limited abilities to search TER’s database of providers.</li>
-                <li>Can read and post on TER’s public discussion boards.</li>
-                <li>Can submit reviews of providers.</li>
-                <li>Can participate in some of TER’s chatrooms.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Phasellus elementum nibh vel mi eleifend, a posuere tortor rutrum.</li>
+                <li>Quisque id lorem vitae felis mollis cursus.</li>
+                <li>Nunc congue elit tristique tortor varius, sed dapibus nibh blandit.</li>
+                <li>Proin vel purus sed orci luctus varius.</li>
+                <li>Nam dapibus felis vitae ligula pretium, id luctus ligula malesuada.</li>
             </ul>
         </div>
         <div className='text-start'>
             <h4>VIP members of The Erotic Review:</h4>
             <ul>
-                <li>Have full access to all of TER’s provider profiles, including detailed breakdowns of the services they offer and the rates they charge.</li>
-                <li>Can read the Juicy Details sections of provider reviews. The Juicy Details is where our users give complete, blow-by-blow descriptions of their sessions.</li>
-                <li>Have access to our VIP search page. This allows our users to search for providers based on name, phone number, contact information, physical attributes, services offered, and many more criteria.</li>
-                <li>Have full access to all of TER’s chatrooms.</li>
-                <li>Can send and receive Personal Messages (PM’s) to other TER members and providers by using TER Mail.</li>
+                <li>Sed tempor nibh ut tristique pretium.</li>
+                <li>Nunc lobortis urna et fringilla laoreet.</li>
+                <li>Maecenas in nunc ornare, tempus erat non, congue ex.</li>
+                <li>Cras cursus sapien et erat fermentum eleifend.</li>
+                <li>Sed et nisl eu enim hendrerit convallis vitae quis metus.</li>
             </ul>
         </div>
               </Col>
