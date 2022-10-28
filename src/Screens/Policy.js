@@ -5,7 +5,7 @@ import Header from './header'
 function Policy() {
   return (
     <>
-    <Header />
+      <Header />
       <div className='all py-4'>
         <Container>
           <div className='body'>
@@ -22,7 +22,7 @@ function Policy() {
                       P.O. BOX 62885<br />
                       Paphos<br />
                       Cyprus, 8820<br />
-                      support@theeroticreview.com
+                      support@redlightrating.com
                     </p>
                   </div>
                 </div>
@@ -131,14 +131,14 @@ function Policy() {
                     <Button className='button' variant="primary" href='Write Review' ><span class="material-symbols-outlined">edit_square</span> Write Review</Button>
                   </div>
                   <div className='img'>
-                    
+
                     <div className='need'>
                       <p><b>Are You Part of <br />
                         excessive<br />
                         Community?</b></p>
                     </div>
                     <div className='register'>
-                      <Button className='button' variant="success"  href='Write Review'>REGISTRATION</Button>
+                      <Button className='button' variant="success" href='Write Review'>REGISTRATION</Button>
                     </div>
                   </div>
                 </div>
@@ -160,7 +160,7 @@ function Policy() {
           </div>
         </Container>
       </div>
-    <Footer />
+      <Footer />
 
     </>
 
