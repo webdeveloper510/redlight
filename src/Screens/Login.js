@@ -18,6 +18,7 @@ function Login() {
                             </Col>
                             <Col md={8} className='member'>
                                 <div className='main-login'>
+                               
                                     <div className='account'>
                                         <div>
                                             <h5>Not a Member yet</h5>
@@ -34,10 +35,31 @@ function Login() {
                                        
                                     </div>
                                     <div className='alredy'>
+                                        
                                         <div>
                                             <h5>Already a member?</h5>
                                             <p>Login to your account.</p>
                                         </div>
+                                        <Form.Group controlId="kindOfStand" className='d-flex justify-content-start mb-3'>
+                               
+                               <Form.Check
+                                   value="2"
+                                   type="radio"
+                                   className='me-3'
+                                   name="login"
+                                   aria-label="radio 2"
+                                   label=" Reviewer"
+                                 
+                               />
+                                <Form.Check
+                                   value="3"
+                                   type="radio"
+                                   name="login"
+                                   aria-label="radio 1"
+                                   label=" Provider"
+                                   
+                               />
+                           </Form.Group>
                                         <div>
                                             <FloatingLabel
                                                 controlId="floatingInput"

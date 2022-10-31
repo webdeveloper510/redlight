@@ -18,8 +18,6 @@ function Footer1() {
             <li><a href='low inforcement'>Low Inforcement</a></li>
             <li><a href='Map'>Map</a></li>
             <li><a href='Contact Us'>Contact Us</a></li>
-          </ul>
-          <ul>
             <li><a href='About Us'>About Us</a></li>
             <li><a href='FAQ'>FAQ'S</a></li>
           </ul>

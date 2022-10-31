@@ -350,8 +350,8 @@ a.nav-link {
 }
 
 .foot ul li {
-  display: inline;
-  padding: 14px;
+  padding: 10px;
+  list-style-type: none;
 }
 
 .link ol li a {
@@ -360,6 +360,9 @@ a.nav-link {
 
 .foot ul {
   text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .twit {

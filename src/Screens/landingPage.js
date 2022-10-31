@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col, Button, Card, Modal } from 'react-bootstrap';
 import Header from './header';
 import Footer from './Footer1';
 function landingPage() {
@@ -97,19 +97,50 @@ function landingPage() {
                     <Form>
                       <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
                         <Form.Label column sm={2}>
-                          Email
+                        Ter Id 
                         </Form.Label>
                         <Col sm={10}>
-                          <Form.Control type="email" placeholder="Email" />
+                          <Form.Control type="text"  />
                         </Col>
                       </Form.Group>
-
-                      <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
+                      <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
                         <Form.Label column sm={2}>
-                          Password
+                        Name 
                         </Form.Label>
                         <Col sm={10}>
-                          <Form.Control type="password" placeholder="Password" />
+                          <Form.Control type="text"  />
+                        </Col>
+                      </Form.Group>
+                      <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+                        <Form.Label column sm={2}>
+                        Age 
+                        </Form.Label>
+                        <Col sm={10}>
+                          <Form.Control type="text"  />
+                        </Col>
+                      </Form.Group>
+                      <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+                        <Form.Label column sm={2}>
+                        Location 
+                        </Form.Label>
+                        <Col sm={10}>
+                          <Form.Control type="text"  />
+                        </Col>
+                      </Form.Group>
+                      <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+                        <Form.Label column sm={2}>
+                        Phone
+                        </Form.Label>
+                        <Col sm={10}>
+                          <Form.Control type="text"  />
+                        </Col>
+                      </Form.Group>
+                      <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+                        <Form.Label column sm={2}>
+                        Email 
+                        </Form.Label>
+                        <Col sm={10}>
+                          <Form.Control type="email"  />
                         </Col>
                       </Form.Group>
                       <fieldset>
@@ -119,35 +150,25 @@ function landingPage() {
                           </Form.Label>
                           <Col sm={10}>
                             <Form.Check
-                              type="radio"
-                              label="first radio"
+                              type="checkout"
+                              label="exclude bad websites"
                               name="formHorizontalRadios"
                               id="formHorizontalRadios1"
                             />
                             <Form.Check
-                              type="radio"
-                              label="second radio"
+                              type="checkout"
+                              label="exclude bad phone numbers"
                               name="formHorizontalRadios"
                               id="formHorizontalRadios2"
                             />
-                            <Form.Check
-                              type="radio"
-                              label="third radio"
-                              name="formHorizontalRadios"
-                              id="formHorizontalRadios3"
-                            />
+                           
                           </Col>
                         </Form.Group>
                       </fieldset>
-                      <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
-                        <Col sm={{ span: 10, offset: 2 }}>
-                          <Form.Check label="Remember me" />
-                        </Col>
-                      </Form.Group>
 
                       <Form.Group as={Row} className="mb-3">
                         <Col sm={{ span: 10, offset: 2 }}>
-                          <Button type="submit">Sign in</Button>
+                          <Button type="submit">Search</Button>
                         </Col>
                       </Form.Group>
                     </Form>
@@ -213,6 +234,12 @@ function landingPage() {
             </Col>
           </Row>
         </Container>
+      </div>
+      <div className='register_banner'>
+        <Card className='text-center'>
+          <p> Are You Part of excessive Community? </p>
+          
+        </Card>
       </div>
       <Footer />
     </div>
