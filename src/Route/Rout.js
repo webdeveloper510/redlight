@@ -6,7 +6,9 @@ import LandingPage from '../Screens/landingPage'
 import Main from '../Screens/main'
 import Privacy from '../Screens/Privacy'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from '../Screens/Login'
+import Login from '../Screens/Login';
+import Register from '../Screens/Register'
+
 function Rout() {
   return (
     <div>
@@ -20,7 +22,8 @@ function Rout() {
           <Route path="/privacy" element={<Privacy />} /> 
          
           <Route path="/login" element={<Login />} />    
-
+           
+          <Route path='/register' element={<Register />}/> 
         </Routes>
       </BrowserRouter>
     </div>

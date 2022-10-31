@@ -29,7 +29,7 @@ function Login() {
                                         </div>
                                         <div >
                                             <p><a className='mor' href='View More Benefits'>View More Benefits</a></p>
-                                            <p><a className='mor' href='Register Now'>Register Now</a></p>
+                                            <p><a className='mor' href='/register'>Register Now</a></p>
                                         </div>
                                        
                                     </div>
