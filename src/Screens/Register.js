@@ -12,7 +12,10 @@ import { useNavigate } from 'react-router-dom';
 function Register() {
     const navigate = useNavigate();
     const [values, setValues] = useState({
-        first_name: '', email: '', username: '', password: '', confirm_password: '',zip_code:'', city:'',height:'', weight:'',hair_color:'',bust_size:'',cup_size:'', dress_size:''
+        first_name: '', email: '', username: '', password: '',
+         confirm_password: '',zip_code:'', city:'',
+         height:'', weight:'',hair_color:'',bust_size:'',cup_size:'',
+         dress_size:'',advertisement_url1:'',advertisement_url2:'',advertisement_url3:''
     });
     const [hide, setHide] = useState(false)
     const [error, setError] = useState(false)
@@ -181,6 +184,15 @@ function Register() {
                                                 <Form.Group className="  mb-3" controlId="formBasicPassword">
                                                     <Form.Control type="text" value={values.dress_size} onChange={set('dress_size')}  placeholder="Enter Dress Size" />
                                                 </Form.Group>
+                                             <Form.Group className="  mb-3" controlId="formBasicPassword">
+                                            <Form.Control type="text" value={values.advertisement_url1} onChange={set('advertisement_url1')} placeholder="Enter Url" />
+                                            </Form.Group>
+                                            <Form.Group className="  mb-3" controlId="formBasicPassword">
+                                            <Form.Control type="text" value={values.advertisement_url2} onChange={set('advertisement_url2')}  placeholder="Enter Url" />
+                                            </Form.Group>
+                                            <Form.Group className="  mb-3" controlId="formBasicPassword">
+                                            <Form.Control type="text" value={values.advertisement_url3} onChange={set('advertisement_url3')}   placeholder="Enter Url" />
+                                            </Form.Group>
                                                 <div className='text-start mb-2'>
 
                                                     <label >Profile Advertise Images :</label>
