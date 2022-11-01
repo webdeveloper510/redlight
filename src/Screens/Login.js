@@ -1,14 +1,15 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import Form from 'react-bootstrap/Form';
+import Form from 'react-bootstrap/Form';    
 import Header from './header';
 import Footer from './Footer1';
+import axios from "axios";
 
 function Login() {
     return (
         <>
-        <Header />
+            <Header />
 
             <div className='login'>
                 <Container>
@@ -18,7 +19,7 @@ function Login() {
                             </Col>
                             <Col md={8} className='member'>
                                 <div className='main-login'>
-                               
+
                                     <div className='account'>
                                         <div>
                                             <h5>Not a Member yet</h5>
@@ -32,34 +33,34 @@ function Login() {
                                             <p><a className='mor' href='View More Benefits'>View More Benefits</a></p>
                                             <p><a className='mor' href='/register'>Register Now</a></p>
                                         </div>
-                                       
+
                                     </div>
                                     <div className='alredy'>
-                                        
+
                                         <div>
                                             <h5>Already a member?</h5>
                                             <p>Login to your account.</p>
                                         </div>
                                         <Form.Group controlId="kindOfStand" className='d-flex justify-content-start mb-3'>
-                               
-                               <Form.Check
-                                   value="2"
-                                   type="radio"
-                                   className='me-3'
-                                   name="login"
-                                   aria-label="radio 2"
-                                   label=" Reviewer"
-                                 
-                               />
-                                <Form.Check
-                                   value="3"
-                                   type="radio"
-                                   name="login"
-                                   aria-label="radio 1"
-                                   label=" Provider"
-                                   
-                               />
-                           </Form.Group>
+
+                                            <Form.Check
+                                                value="2"
+                                                type="radio"
+                                                className='me-3'
+                                                name="login"
+                                                aria-label="radio 2"
+                                                label=" Reviewer"
+
+                                            />
+                                            <Form.Check
+                                                value="3"
+                                                type="radio"
+                                                name="login"
+                                                aria-label="radio 1"
+                                                label=" Provider"
+
+                                            />
+                                        </Form.Group>
                                         <div>
                                             <FloatingLabel
                                                 controlId="floatingInput"
@@ -76,7 +77,7 @@ function Login() {
                                                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                                         <Form.Check type="checkbox" label="Remember Password" />
                                                     </Form.Group>
-                                                    <Button className='button' variant="info"  href='Write Review'>Login Now </Button>
+                                                    <Button className='button' variant="info" href='Write Review'>Login Now </Button>
                                                     <a className='regis' href='Forgot Password?'>Forgot Password?</a>
                                                 </Form>
                                             </div>
