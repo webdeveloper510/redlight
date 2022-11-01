@@ -172,6 +172,19 @@ function Register() {
                                         <Form.Group className="  mb-3" controlId="formBasicPassword">
                                             <Form.Control type="file"  placeholder="Enter Dress Size" />
                                         </Form.Group>
+                                        <div className='text-start mb-2'>
+
+                                            <label >Profile Advertise links :</label>
+                                            </div>
+                                            <Form.Group className="  mb-3" controlId="formBasicPassword">
+                                            <Form.Control type="text"  placeholder="Enter Dress Size" />
+                                            </Form.Group>
+                                            <Form.Group className="  mb-3" controlId="formBasicPassword">
+                                            <Form.Control type="text"  placeholder="Enter Dress Size" />
+                                            </Form.Group>
+                                            <Form.Group className="  mb-3" controlId="formBasicPassword">
+                                            <Form.Control type="text"  placeholder="Enter Dress Size" />
+                                            </Form.Group>
                          
                                         <Form.Group controlId="kindOfStand" className='d-flex justify-content-left mb-3'>
                                         <div className='text-start me-2'>
