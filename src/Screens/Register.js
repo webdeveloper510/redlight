@@ -21,6 +21,9 @@ function Register() {
     const [error, setError] = useState(false)
     const [item, setItem] = useState({ kindOfStand: "2" });
     const [item1, setItem1] = useState({ kindOfStand1: "" });
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedImage2, setSelectedImage2] = useState(null);
+    const [selectedImage3, setSelectedImage3] = useState(null);
 
     const { kindOfStand } = item;
     const { kindOfStand1 } = item1;
@@ -75,15 +78,21 @@ function Register() {
             setError(true)
         }
         else {
-            let data = {
+            console.log(selectedImage)
+            let data1 = {
                 ...values,
                 "profile_id": item.kindOfStand,
-                "profile_claimed":item1.kindOfStand1
+                "profile_claimed":item1.kindOfStand1,
+                "image1":selectedImage,
+                "image2":selectedImage2,
+                "image3":selectedImage3,
+
             }
+            console.log(data1)
             axios({
                 url: "https://redlightrating.com/redlight-backend/api/register",
                 method: "POST",
-                data: data,
+                data: data1,
             })
                 .then((res) => {
                     console.log(res)
@@ -198,13 +207,13 @@ function Register() {
                                                     <label >Profile Advertise Images :</label>
                                                 </div>
                                                 <Form.Group className="  mb-3" controlId="formBasicPassword">
-                                                    <Form.Control type="file" placeholder="Enter Dress Size" />
+                                                    <Form.Control type="file"     onChange={(event) => { setSelectedImage(event.target.files[0]) }} placeholder="Advertise Image" />
                                                 </Form.Group>
                                                 <Form.Group className="  mb-3" controlId="formBasicPassword">
-                                                    <Form.Control type="file" placeholder="Enter Dress Size" />
+                                                    <Form.Control type="file" onChange={(event) => { setSelectedImage2(event.target.files[0]) }} placeholder="Advertise Image" />
                                                 </Form.Group>
                                                 <Form.Group className="  mb-3" controlId="formBasicPassword">
-                                                    <Form.Control type="file" placeholder="Enter Dress Size" />
+                                                    <Form.Control type="file"  onChange={(event) => { setSelectedImage3(event.target.files[0]) }}placeholder="Advertise Image" />
                                                 </Form.Group>
 
                                                 <Form.Group controlId="kindOfStand" className='d-flex justify-content-left mb-3'>
