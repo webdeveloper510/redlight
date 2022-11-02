@@ -1,12 +1,72 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';    
 import Header from './header';
 import Footer from './Footer1';
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+    const navigate = useNavigate();
+    const [values, setValues] = useState({email: '', password: ''});
+    const [item, setItem] = useState({ kindOfStand: "2" });
+
+    const { kindOfStand } = item;
+    const set = name => {
+        return ({ target: { value } }) => {
+            setValues(oldValues => ({ ...oldValues, [name]: value }));
+        }
+    };
+    const handleChange = e => {
+        e.persist()
+        console.log(e.target.value);
+        setItem(prevState => ({
+            ...prevState,
+            kindOfStand: e.target.value
+        }));
+    };
+
+    const submitForm = () => {
+            let data = {
+                ...values,
+                "role_id": item.kindOfStand,
+
+            }
+            console.log(data)
+            axios({
+                url: "https://redlightrating.com/redlight-backend/api/login",
+                method: "POST",
+                data: data,
+            })
+                .then((res) => {
+                    console.log(res)
+                    showToastMessage('user Login Succesfully', '')
+                })
+                .catch(error => showToastMessage(error.response.data.message, 'error'));
+            console.log('working', values)
+        
+    }
+    const showToastMessage = (message, type) => {
+
+        if (type != 'error') {
+
+            toast.success(message, {
+                position: toast.POSITION.TOP_RIGHT
+            });
+            navigate('/landing')
+        }
+        else {
+            toast.error(message, {
+                position: toast.POSITION.TOP_RIGHT
+            });
+        }
+
+
+    };
+
     return (
         <>
             <Header />
@@ -43,23 +103,24 @@ function Login() {
                                         </div>
                                         <Form.Group controlId="kindOfStand" className='d-flex justify-content-start mb-3'>
 
-                                            <Form.Check
-                                                value="2"
-                                                type="radio"
-                                                className='me-3'
-                                                name="login"
-                                                aria-label="radio 2"
-                                                label=" Reviewer"
+                                        <Form.Check
+                                    value="2"
+                                    type="radio"
+                                    className='me-3'
+                                    aria-label="radio 2"
+                                    label=" Reviewer"
+                                    onChange={handleChange}
+                                    checked={kindOfStand === "2"}
+                                />
+                                <Form.Check
+                                    value="3"
+                                    type="radio"
+                                    aria-label="radio 1"
+                                    label=" Provider"
 
-                                            />
-                                            <Form.Check
-                                                value="3"
-                                                type="radio"
-                                                name="login"
-                                                aria-label="radio 1"
-                                                label=" Provider"
-
-                                            />
+                                    onChange={handleChange}
+                                    checked={kindOfStand === "3"}
+                                />
                                         </Form.Group>
                                         <div>
                                             <FloatingLabel
@@ -67,17 +128,17 @@ function Login() {
                                                 label="Username"
                                                 className="mb-3"
                                             >
-                                                <Form.Control type="email" placeholder="name@example.com" />
+                                                <Form.Control type="email" value={values.email} onChange={set('email')} placeholder="name@example.com" />
                                             </FloatingLabel>
                                             <FloatingLabel controlId="floatingPassword" label="Password">
-                                                <Form.Control type="password" placeholder="Password" />
+                                                <Form.Control type="password" value={values.password} onChange={set('password')} placeholder="Password" />
                                             </FloatingLabel>
                                             <div className='checkbox'>
                                                 <Form>
                                                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Remember Password" />
+                                                        <Form.Check type="checkbox"  label="Remember Password" />
                                                     </Form.Group>
-                                                    <Button className='button' variant="info" href='Write Review'>Login Now </Button>
+                                                    <Button className='button' variant="info" onClick={() => submitForm()} >Login Now </Button>
                                                     <a className='regis' href='Forgot Password?'>Forgot Password?</a>
                                                 </Form>
                                             </div>
